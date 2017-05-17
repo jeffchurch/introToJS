@@ -35,7 +35,17 @@
                     return count;
                 }
                 
-                function 
+                function countChar(wordToCount, charToCount){
+                    var count = 0;
+                    var looper;
+                    for(looper = 0; looper < wordToCount.length; looper++){
+                        var letter = wordToCount.charAt(looper);
+                        if(letter === charToCount){
+                            count++;
+                        }
+                    }
+                    return count;
+                }
             </script>
         </head>
     </html>
