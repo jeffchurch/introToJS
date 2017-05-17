@@ -24,17 +24,10 @@
             
             <script>
                 function countBs(wordToCount){
-                    var count = 0;
-                    var looper;
-                    for(looper = 0; looper < wordToCount.length; looper++){
-                        var letter = wordToCount.charAt(looper);
-                        if(letter === "B"){
-                            count++;
-                        }
-                    }
-                    return count;
+                    var counter = countChar(wordToCount, "B");
+                    return counter;
                 }
-                
+                countBs("Bobs Brown Burgers");
                 function countChar(wordToCount, charToCount){
                     var count = 0;
                     var looper;
@@ -46,6 +39,7 @@
                     }
                     return count;
                 }
+                countChar("I love everything.", "e");
             </script>
         </head>
     </html>
